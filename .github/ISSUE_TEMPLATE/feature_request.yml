@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest something CYC should do or do differently.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is **public**. Do not paste your license key or other personal data.
+        You may write in English or German.
+  - type: input
+    id: version
+    attributes:
+      label: CYC version
+      description: Shown in the dashboard under "About". The feedback button in CYC fills this in.
+      placeholder: "0.8.5"
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like CYC to do?
+      description: Describe the problem you want solved, not only the solution you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Optional. How you work around it today, or how often it comes up.
