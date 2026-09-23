@@ -1,0 +1,22 @@
+name: General feedback
+description: Anything else you want to tell us about CYC.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is **public**. Do not paste your license key or other personal data.
+        You may write in English or German.
+  - type: input
+    id: version
+    attributes:
+      label: CYC version
+      description: Shown in the dashboard under "About". The feedback button in CYC fills this in.
+      placeholder: "0.8.5"
+  - type: textarea
+    id: description
+    attributes:
+      label: Your feedback
+    validations:
+      required: true

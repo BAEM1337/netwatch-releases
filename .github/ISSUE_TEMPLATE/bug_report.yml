@@ -1,0 +1,53 @@
+name: Bug report
+description: Something in CYC does not work as it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. This issue is **public**. Do not paste your license key,
+        e-mail address, postal address, contract number, public IP address or PC name.
+        Security problems go to [private reporting](https://github.com/BAEM1337/netwatch-releases/security/advisories/new) instead.
+        You may write in English or German.
+  - type: input
+    id: version
+    attributes:
+      label: CYC version
+      description: Shown in the dashboard under "About". The feedback button in CYC fills this in.
+      placeholder: "0.8.5"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How is this PC connected to the router?
+      options:
+        - Cable (Ethernet)
+        - Wi-Fi
+        - Not sure
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what CYC did instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots or log excerpts
+      description: Optional. Check them for personal data before you attach them.
